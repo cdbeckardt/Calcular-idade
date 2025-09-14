@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Calculadora de Idade Animada</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora de Idade Animada</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container" role="main" aria-label="Calculadora de Idade com interface animada">
-    <h1> Calculadora de Idade </h1>
+    <h1>Calculadora de Idade</h1>
     <label for="anoNascimento">Digite seu ano de nascimento:</label>
     <input type="number" id="anoNascimento" placeholder="Ex: 1990" min="1900" max="2025" aria-describedby="resultado" />
     <div class="btn-group">
@@ -18,5 +18,6 @@
     <div class="resultado" id="resultado" aria-live="polite" role="alert"></div>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
