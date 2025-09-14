@@ -1,0 +1,116 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fbc7d4 0%, #a1c4fd 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    color: #333;
+  }
+
+  .container {
+    background: white;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    width: 340px;
+    text-align: center;
+    position: relative;
+    animation: fadeInScale 1s ease forwards;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    color: #d97cae;
+    text-shadow: 1px 1px 4px #eec7db;
+    font-size: 2rem;
+  }
+
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #b565a7;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1.1rem;
+    border: 2px solid #b565a7;
+    border-radius: 12px;
+    transition: border-color 0.3s ease;
+    text-align: center;
+  }
+
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #d97cae;
+    box-shadow: 0 0 8px #d97cae;
+  }
+
+  .btn-group {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  button {
+    flex: 1;
+    background: #d97cae;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(217,124,174, 0.5);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  button:hover {
+    background: #b565a7;
+    transform: scale(1.05);
+  }
+
+  .btn-clear {
+    background: #7eaedc;
+    box-shadow: 0 5px 15px rgba(126,174,220,0.5);
+  }
+
+  .btn-clear:hover {
+    background: #5d8acb;
+  }
+
+  .resultado {
+    margin-top: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #d97cae;
+    min-height: 2.5rem;
+    animation: pulseColor 2s infinite alternate;
+  }
+
+  @keyframes fadeInScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.7);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes pulseColor {
+    0% { color: #d97cae; }
+    100% { color: #b565a7; }
+  }
+</style>
